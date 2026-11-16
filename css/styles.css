@@ -126,3 +126,51 @@ p {
         font-size: 1.2rem;
     }
 }
+
+.list {
+     list-style: none;
+     padding-left: 0;
+     color: var(--color-headings);
+}
+
+.liat--inline .list__item {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.list--tick {
+    list-style-image: url(../images/tick.svg);
+    padding-left: 3rem;
+}
+
+.list--tick .list__itemm {
+    padding-left: 0.5rem; 
+    margin-bottom: 1rem; 
+}
+
+@media  screen and (min-width: 1024) {
+    .list--tick .list__item {
+        padding-left: 0;
+    }
+}
+
+
+   /* icon */
+.icon {
+    width: 40px;
+    height: 40px;
+   }
+
+   .icon--primary {
+       fill: var(--color-primary);
+   }
+
+.icon-container {
+    background: #f3f9fa;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
