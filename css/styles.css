@@ -8,6 +8,11 @@
 
     /* Tomography */
 
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -133,7 +138,7 @@ p {
      color: var(--color-headings);
 }
 
-.liat--inline .list__item {
+.list--inline .list__item {
     display: inline-block;
     margin-right: 2rem;
 }
@@ -173,4 +178,71 @@ p {
     display: inline-block;
     justify-content: center;
     align-items: center;
+}
+
+
+  /* buttom */
+
+  .btn {
+    font-size: 1,8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2rem 3rem;
+    border: 0;
+    text-align: center;
+    border-radius: 40px;
+    margin: 1rem 0;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .btn--outline {
+    background: #fff;
+    border: 2px solid var(--color-headings);
+    color: var(--color-headings);
+  }
+
+  .btn--outline:hover {
+    background: var(--color-headings);
+    color: #fff;
+  }
+
+  .btn--primary {
+    background: var(--color-primary);
+    color: #fff;
+  }
+
+  .btn--primary:hover {
+    background: #3a8ffd;
+  }
+
+  .btn--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+  }
+
+.btn--secondary:hover {
+    background: #00c8eb;
+  }
+
+
+.btn--accent {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+  .btn--accent:hover {
+    background: #ec3000;
+  }
+
+
+.btn--block {
+    width: 100%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }
 }
