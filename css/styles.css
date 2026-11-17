@@ -1,4 +1,4 @@
- root {
+:root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
     --color-accent: #ff3400;
@@ -148,12 +148,12 @@ p {
     padding-left: 3rem;
 }
 
-.list--tick .list__itemm {
+.list--tick .list__item {
     padding-left: 0.5rem; 
     margin-bottom: 1rem; 
 }
 
-@media  screen and (min-width: 1024) {
+@media screen and (min-width: 1024px) {
     .list--tick .list__item {
         padding-left: 0;
     }
@@ -175,7 +175,7 @@ p {
     width: 64px;
     height: 64px;
     border-radius: 100%;
-    display: inline-block;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 }
@@ -184,7 +184,7 @@ p {
   /* buttom */
 
   .btn {
-    font-size: 1,8rem;
+    font-size: 1.8rem;
     font-weight: 600;
     text-transform: uppercase;
     padding: 2rem 3rem;
@@ -196,16 +196,6 @@ p {
     white-space: nowrap;
   }
 
-  .btn--outline {
-    background: #fff;
-    border: 2px solid var(--color-headings);
-    color: var(--color-headings);
-  }
-
-  .btn--outline:hover {
-    background: var(--color-headings);
-    color: #fff;
-  }
 
   .btn--primary {
     background: var(--color-primary);
@@ -243,6 +233,42 @@ p {
 
 @media screen and (min-width: 1024px) {
     .btn {
+        font-size: 1.5rem;
+    }
+}
+
+
+.btn--outline {
+    background: #fff;
+    border: 2px solid var(--color-headings);
+    color: var(--color-headings);
+  }
+
+  .btn--outline:hover {
+    background: var(--color-headings);
+    color: #fff;
+  }
+
+
+
+    /* input */
+
+.input {
+    padding: 1.5rem 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    outline: 0;
+    color: var(--color-headings);
+    font-size: 1.8rem;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .input {
         font-size: 1.5rem;
     }
 }
