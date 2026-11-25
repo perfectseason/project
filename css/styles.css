@@ -11,6 +11,11 @@
 
     /* Tomography */
 
+::selection {
+    background: var(--color-primary);
+    color: #fff;
+}
+
 
 *, *::after, *::before {
     box-sizing: border-box;
@@ -44,6 +49,7 @@ h2 {
 
 h3 {
     font-size: 3rem;
+    font-weight: 500;
    
 }
 
@@ -140,7 +146,6 @@ p {
 .list {
      list-style: none;
      padding-left: 0;
-     color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -151,6 +156,7 @@ p {
 .list--tick {
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
+    color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -451,6 +457,7 @@ p {
 
 .media {
     display: flex;
+    margin-bottom: 4rem;
 }
 
 .media__title {
@@ -689,18 +696,20 @@ p {
     color: #7b858b;
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
     color: #fff;
 }
 
 .block--skewed-right {
     padding-bottom: cal(var(--padding-vertical) +4rem);
-     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .block--skewed-left {
     padding-bottom: cal(var(--padding-vertical) +4rem);
-     clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
 }
 
 .container {
@@ -886,4 +895,47 @@ HERO */
     .feature:nth-of-type(even) .feature__content {
         order: 2;
     }
+}
+
+
+/* showcase block */
+
+
+.block-ball {
+    width: 100%;
+}
+
+.block-showcase .icon {
+    width: 40px;
+    height: 40px;
+    fill: var(--color-primary);
+}
+
+.showcase-heading {
+    text-align: center;
+}
+
+
+.block-showcase ul.List {
+    list-style-type: none !important;
+}
+
+.block-showcase ul.List li {
+    list-style: none !important;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+    .block-showcase .grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    .block-showcase .block-ball {
+        width: auto;
+        justify-self: end;
+        max-width: 700px;
+    }
+
 }
