@@ -685,6 +685,7 @@ p {
 
 .block__header {
     text-align: center;
+    margin-bottom: 4rem;
 }
 
 .block__heading {
@@ -939,3 +940,11 @@ HERO */
     }
 
 }
+
+
+
+/* Footer */
+.footer {
+    background: #232323;
+}
+
